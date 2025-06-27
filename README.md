@@ -6,7 +6,7 @@ This repository contains a simple static website for **SmoothFlow Automations**.
 
 - `index.html` – main HTML page
 - `css/style.css` – site styles
-- `js/main.js` – basic form interaction
+- `js/main.js` – loads header and footer components
 
 ## Usage
 
@@ -14,6 +14,10 @@ Open `index.html` in a modern web browser. No additional build steps are require
 
 You can customize the content in the HTML file or extend the styles and scripts as needed.
 
+feature/codex
+The `contact.html` page now contains placeholders for embedding a Google Form and a Calendly link, instead of a built-in contact form.
+
+=======
 ## Color Palette
 
 The site uses the following brand colors:
@@ -27,3 +31,4 @@ The site uses the following brand colors:
 | Muted Text | Cool Slate Gray | `#5A6C78` |
 | Highlight | Sky Mist | `#DCEEFF` |
 
+main
