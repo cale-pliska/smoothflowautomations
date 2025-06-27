@@ -18,11 +18,26 @@ body {
     background: var(--color-bg-light);
 }
 
+/* Layout width control */
+.hero,
+main,
+footer {
+    width: min(90%, 1200px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .hero {
     background: var(--color-accent);
     color: white;
     padding: 2rem;
     text-align: center;
+}
+
+.logo {
+    max-width: 150px;
+    display: block;
+    margin: 0 auto 1rem;
 }
 
 .nav ul {
@@ -95,5 +110,29 @@ form button:hover {
     .nav ul {
         justify-content: flex-end;
         padding-right: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero {
+        padding: 1.5rem 1rem;
+    }
+
+    main {
+        padding: 1.5rem 1rem;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav li {
+        margin: 0;
+        width: 100%;
+    }
+
+    .nav a {
+        padding: 0.75rem 1rem;
     }
 }
