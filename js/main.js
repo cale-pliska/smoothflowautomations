@@ -18,14 +18,9 @@ function includeComponent(id, url, callback) {
 
 document.addEventListener('DOMContentLoaded', function () {
     includeComponent('header-container', 'components/header.html', function () {
-        const script = document.createElement('script');
-        script.src = 'js/header.js';
-        script.onload = function () {
-            if (typeof initHeader === 'function') {
-                initHeader();
-            }
-        };
-        document.body.appendChild(script);
+        if (typeof initHeader === 'function') {
+            initHeader();
+        }
     });
     includeComponent('footer-container', 'components/footer.html');
 

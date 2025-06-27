@@ -19,9 +19,5 @@ function initHeader() {
   }
 }
 
-// Auto-run if script loads after the DOM is ready
-if (document.readyState !== 'loading') {
-  initHeader();
-} else {
-  document.addEventListener('DOMContentLoaded', initHeader);
-}
+// Expose initHeader globally so other scripts can trigger it
+window.initHeader = initHeader;
