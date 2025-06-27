@@ -51,7 +51,6 @@ header .nav {
     border: none;
     cursor: pointer;
     padding: 0.5rem;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -71,11 +70,9 @@ header .nav {
     }
 
     .nav-toggle {
-        display: block;
-        position: absolute;
-        right: 1rem;
-        top: 0.5rem;
-        z-index: 2;
+        display: flex;
+        width: 100%;
+        justify-content: center;
     }
 
     #nav-menu {
