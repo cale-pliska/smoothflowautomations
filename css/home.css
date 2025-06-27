@@ -11,7 +11,15 @@
     padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
+    width: 60%;
+    margin: 0 auto;
     max-width: 100%;
+}
+
+@media (max-width: 767px) {
+    .video-wrapper {
+        width: 100%;
+    }
 }
 
 .video-wrapper iframe {
