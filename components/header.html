@@ -1,7 +1,10 @@
 <header class="hero">
-    <img src="assets/logo-500px.png" alt="SmoothFlow Automations logo" class="logo">
-    <h1>SmoothFlow Automations</h1>
-    <p>Simplify and streamline your business processes</p>
+  <img src="assets/logo-500px.png" alt="SmoothFlow Automations logo" class="logo">
+  <h1>SmoothFlow Automations</h1>
+  <p>Simplify and streamline your business processes</p>
+  <div class="header-video">
+    <video id="headerVideo" src="assets/river-flowing.mp4" autoplay muted playsinline></video>
+  </div>
 </header>
 
 <nav class="nav">
@@ -13,3 +16,11 @@
         <li><a href="contact.html">Contact</a></li>
     </ul>
 </nav>
+
+<script>
+  const video = document.getElementById('headerVideo');
+  video.addEventListener('ended', () => {
+    video.pause();
+    video.currentTime = video.duration; // freeze on last frame
+  });
+</script>
