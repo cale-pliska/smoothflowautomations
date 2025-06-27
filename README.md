@@ -5,7 +5,8 @@ This repository contains a simple static website for **SmoothFlow Automations**.
 ## Structure
 
 - `index.html` – main HTML page
-- `css/style.css` – site styles
+- `css/style.css` – general site styles
+- `css/header.css` – styles for the video header
 - `js/main.js` – loads header and footer components
 
 ## Usage

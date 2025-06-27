@@ -19,7 +19,6 @@ body {
 }
 
 /* Layout width control */
-.hero,
 main,
 footer {
     width: min(90%, 1200px);
@@ -27,26 +26,6 @@ footer {
     margin-right: auto;
 }
 
-.hero {
-    background: var(--color-accent);
-    color: white;
-    padding: 2rem;
-    text-align: center;
-}
-
-.logo {
-    max-width: 150px;
-    display: block;
-    margin: 0 auto 1rem;
-}
-
-.header-video video {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-top: 1rem;
-    border-radius: 4px;
-}
 
 .nav ul {
     list-style: none;
@@ -56,6 +35,7 @@ footer {
     justify-content: center;
     background: var(--color-primary);
 }
+
 
 .nav li {
     margin: 0 1rem;
@@ -122,9 +102,6 @@ form button:hover {
 }
 
 @media (max-width: 767px) {
-    .hero {
-        padding: 1.5rem 1rem;
-    }
 
     main {
         padding: 1.5rem 1rem;
