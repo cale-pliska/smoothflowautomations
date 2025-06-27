@@ -56,6 +56,22 @@ main {
     padding: 2rem;
 }
 
+.intro-video {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.intro-video iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+}
+
+.intro-video .intro-text {
+    margin-top: 1rem;
+    font-style: italic;
+}
+
 footer {
     text-align: center;
     padding: 1rem 0;

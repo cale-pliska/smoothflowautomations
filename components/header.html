@@ -7,7 +7,10 @@
     </div>
   </div>
   <nav class="nav">
-    <ul>
+    <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+      <img src="assets/burger-icon.svg" alt="Menu">
+    </button>
+    <ul id="nav-menu" class="nav-menu">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="services.html">Services</a></li>
@@ -16,11 +19,3 @@
     </ul>
   </nav>
 </header>
-
-<script>
-  const video = document.getElementById('headerVideo');
-  video.addEventListener('ended', () => {
-    video.pause();
-    video.currentTime = video.duration; // freeze on last frame
-  });
-</script>
