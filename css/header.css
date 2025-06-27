@@ -51,8 +51,6 @@ header .nav {
     border: none;
     cursor: pointer;
     padding: 0.5rem;
-    align-items: center;
-    justify-content: center;
 }
 
 .nav-toggle img {
@@ -72,7 +70,8 @@ header .nav {
     .nav-toggle {
         display: flex;
         width: 100%;
-        justify-content: center;
+        justify-content: right;
+        padding-right: 10%;
     }
 
     #nav-menu {
