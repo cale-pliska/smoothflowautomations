@@ -44,11 +44,16 @@ header .nav {
     position: relative;
 }
 
+
 .nav-toggle {
     display: none;
-    background: none;
+    background: var(--color-primary);
     border: none;
     cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-toggle img {
