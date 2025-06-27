@@ -61,6 +61,10 @@ header .nav {
         max-height: 400px;
     }
 
+    header .nav {
+        background: var(--color-primary);
+    }
+
     .nav-toggle {
         display: block;
         position: absolute;

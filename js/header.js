@@ -1,11 +1,12 @@
 // JavaScript for header component
 
-document.addEventListener('DOMContentLoaded', function () {
+// Initialize interactions for the header component
+function initHeader() {
   const video = document.getElementById('headerVideo');
   if (video) {
     video.addEventListener('ended', function () {
       video.pause();
-      video.currentTime = video.duration;
+      video.currentTime = video.duration; // freeze on last frame
     });
   }
 
@@ -16,4 +17,11 @@ document.addEventListener('DOMContentLoaded', function () {
       menu.classList.toggle('active');
     });
   }
-});
+}
+
+// Auto-run if script loads after the DOM is ready
+if (document.readyState !== 'loading') {
+  initHeader();
+} else {
+  document.addEventListener('DOMContentLoaded', initHeader);
+}
