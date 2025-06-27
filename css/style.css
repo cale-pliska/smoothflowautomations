@@ -1,14 +1,25 @@
 /* Main styles */
+
+:root {
+    --color-primary: #61AEEF; /* River Blue */
+    --color-accent: #3D8EC9; /* Deep Flow Blue */
+    --color-bg-light: #F9FBFD; /* Soft Ice White */
+    --color-dark-text: #1F1F1F; /* Graphite Black */
+    --color-muted-text: #5A6C78; /* Cool Slate Gray */
+    --color-highlight: #DCEEFF; /* Sky Mist */
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: #333;
+    color: var(--color-dark-text);
+    background: var(--color-bg-light);
 }
 
 .hero {
-    background: #4a90e2;
+    background: var(--color-accent);
     color: white;
     padding: 2rem;
     text-align: center;
@@ -20,7 +31,7 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    background: #333;
+    background: var(--color-primary);
 }
 
 .nav li {
@@ -34,6 +45,10 @@ body {
     display: block;
 }
 
+.nav a:hover {
+    background: var(--color-accent);
+}
+
 main {
     padding: 2rem;
 }
@@ -41,7 +56,7 @@ main {
 footer {
     text-align: center;
     padding: 1rem 0;
-    background: #f4f4f4;
+    background: var(--color-highlight);
 }
 
 form {
@@ -62,14 +77,18 @@ form textarea {
 form button {
     margin-top: 1rem;
     padding: 0.75rem;
-    background: #4a90e2;
+    background: var(--color-primary);
     color: white;
     border: none;
     cursor: pointer;
 }
 
 form button:hover {
-    background: #357ABD;
+    background: var(--color-accent);
+}
+
+.text-muted {
+    color: var(--color-muted-text);
 }
 
 @media (min-width: 768px) {
