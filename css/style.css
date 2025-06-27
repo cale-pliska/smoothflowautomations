@@ -40,6 +40,14 @@ footer {
     margin: 0 auto 1rem;
 }
 
+.header-video video {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 4px;
+}
+
 .nav ul {
     list-style: none;
     margin: 0;
