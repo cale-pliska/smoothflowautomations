@@ -19,7 +19,6 @@ body {
 }
 
 /* Layout width control */
-.hero,
 main,
 footer {
     width: min(90%, 1200px);
@@ -28,10 +27,25 @@ footer {
 }
 
 .hero {
-    background: var(--color-accent);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    max-height: 750px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: white;
-    padding: 2rem;
     text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.overlay {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
 }
 
 .logo {
@@ -40,12 +54,14 @@ footer {
     margin: 0 auto 1rem;
 }
 
-.header-video video {
-    display: block;
+.header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-    margin-top: 1rem;
-    border-radius: 4px;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 .nav ul {
@@ -55,6 +71,14 @@ footer {
     display: flex;
     justify-content: center;
     background: var(--color-primary);
+}
+
+.hero .nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 .nav li {
