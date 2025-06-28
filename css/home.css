@@ -1,0 +1,89 @@
+/* Home page specific styles */
+
+
+/* general section layout on the home page */
+.home-section {
+    text-align: center;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+.home-section h2 {
+    margin-bottom: 1rem;
+    color: var(--color-accent);
+}
+
+.welcome-title {
+    position: relative;
+    text-align: center;
+}
+
+.home-section p {
+    text-align: left;
+}
+
+.yin-yang-icon {
+    position: absolute;
+    top: 100%;
+    right: -50px;
+    width: 300px;
+    height: 300px;
+    opacity: 0.15;
+    transform: translateY(-40%);
+    pointer-events: none;
+}
+
+.home-section p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* style the IT guy section with a subtle background */
+.it-guy-section {
+    background: var(--color-highlight);
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ensure content appears above decorative SVG */
+.it-guy-section > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* decorative circles positioned in the corner */
+.circle-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 180px;
+    height: 180px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 60%;
+    margin: 1.5rem auto;
+    max-width: 100%;
+    min-height: 20vh;
+    aspect-ratio: 16 / 9;
+}
+
+@media (max-width: 767px) {
+    .video-wrapper {
+        width: 100%;
+    }
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
