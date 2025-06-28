@@ -12,9 +12,13 @@ function initHeader() {
 
   const toggle = document.getElementById('nav-toggle');
   const menu = document.getElementById('nav-menu');
+  const circle = document.getElementById('nav-circle');
   if (toggle && menu) {
     toggle.addEventListener('click', function () {
       menu.classList.toggle('active');
+      if (circle) {
+        circle.style.visibility = 'hidden';
+      }
     });
   }
 }
