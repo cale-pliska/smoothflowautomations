@@ -24,6 +24,25 @@
     background: var(--color-highlight);
     padding: 2rem 1rem;
     border-radius: 0.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ensure content appears above decorative SVG */
+.it-guy-section > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* decorative circles positioned in the corner */
+.circle-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 180px;
+    pointer-events: none;
+    z-index: 0;
 }
 
 .video-wrapper {
