@@ -24,14 +24,20 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     includeComponent('footer-container', 'components/footer.html');
 
-    // Trigger SVG animations on the home page
-    const yinYang = document.querySelector('.yin-yang-icon');
-    if (yinYang) {
-        yinYang.classList.add('animate-yin-yang');
+    // Trigger SVG animations when they enter the viewport
+    function observeVisibility(element, className) {
+        if (!element) return;
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add(className);
+                    obs.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        observer.observe(element);
     }
 
-    const circles = document.querySelector('.circle-bg');
-    if (circles) {
-        circles.classList.add('animate-circle');
-    }
+    observeVisibility(document.querySelector('.yin-yang-icon'), 'animate-yin-yang');
+    observeVisibility(document.querySelector('.circle-bg'), 'animate-circle');
 });
