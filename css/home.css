@@ -8,12 +8,11 @@
 
 .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
     width: 60%;
     margin: 0 auto;
     max-width: 100%;
+    min-height: 20vh;
+    aspect-ratio: 16 / 9;
 }
 
 @media (max-width: 767px) {
