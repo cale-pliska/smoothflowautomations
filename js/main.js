@@ -24,4 +24,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     includeComponent('footer-container', 'components/footer.html');
 
+    // Trigger SVG animations on the home page
+    const yinYang = document.querySelector('.yin-yang-icon');
+    if (yinYang) {
+        yinYang.classList.add('animate-yin-yang');
+    }
+
+    const circles = document.querySelector('.circle-bg');
+    if (circles) {
+        circles.classList.add('animate-circle');
+    }
 });
