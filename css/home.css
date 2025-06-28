@@ -1,15 +1,35 @@
 /* Home page specific styles */
 
-#it-guy.profile,
-#it-guy {
+
+/* general section layout on the home page */
+.home-section {
     text-align: center;
-    margin-top: 2rem;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+.home-section h2 {
+    margin-bottom: 1rem;
+    color: var(--color-accent);
+}
+
+.home-section p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* style the IT guy section with a subtle background */
+.it-guy-section {
+    background: var(--color-highlight);
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
 }
 
 .video-wrapper {
     position: relative;
-    width: 40%;
-    margin: 0 auto;
+    width: 60%;
+    margin: 1.5rem auto;
     max-width: 100%;
     min-height: 20vh;
     aspect-ratio: 16 / 9;
