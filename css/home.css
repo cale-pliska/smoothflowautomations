@@ -14,17 +14,19 @@
 }
 
 .welcome-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
+    position: relative;
+    text-align: center;
 }
 
 .yin-yang-icon {
-    width: 2rem;
-    height: 2rem;
-    opacity: 0.3;
-    flex-shrink: 0;
+    position: absolute;
+    top: 50%;
+    right: -100px;
+    width: 200px;
+    height: 200px;
+    opacity: 0.15;
+    transform: translateY(-50%);
+    pointer-events: none;
 }
 
 .home-section p {
