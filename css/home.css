@@ -13,6 +13,20 @@
     color: var(--color-accent);
 }
 
+.welcome-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.yin-yang-icon {
+    width: 2rem;
+    height: 2rem;
+    opacity: 0.3;
+    flex-shrink: 0;
+}
+
 .home-section p {
     max-width: 700px;
     margin-left: auto;
