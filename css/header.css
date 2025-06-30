@@ -9,6 +9,7 @@
     color: white;
     text-align: center;
     margin: 0;
+    margin-top: 0.5rem; /* small space above the logo */
     padding: 0;
 }
 
