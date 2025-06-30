@@ -16,6 +16,12 @@
     border-radius: 0.5rem;
 }
 
+.about-intro::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 @media (max-width: 767px) {
     .about-photo {
         float: none;
