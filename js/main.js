@@ -24,4 +24,20 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     includeComponent('footer-container', 'components/footer.html');
 
+    // Trigger SVG animations when they enter the viewport
+    function observeVisibility(element, className) {
+        if (!element) return;
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add(className);
+                    obs.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        observer.observe(element);
+    }
+
+    observeVisibility(document.querySelector('.yin-yang-icon'), 'animate-yin-yang');
+    observeVisibility(document.querySelector('.circle-bg'), 'animate-circle');
 });
