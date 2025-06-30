@@ -22,6 +22,20 @@
     text-align: left;
 }
 
+.balance-intro::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.home-photo {
+    float: right;
+    margin: 0 0 1rem 1rem;
+    width: min(45%, 300px);
+    border-radius: 1rem;
+    border: 12px solid var(--color-accent);
+}
+
 .yin-yang-icon {
     position: absolute;
     top: 100%;
@@ -78,6 +92,12 @@
 @media (max-width: 767px) {
     .video-wrapper {
         width: 100%;
+    }
+    .home-photo {
+        float: none;
+        display: block;
+        margin: 0 auto 1rem;
+        width: 80%;
     }
 }
 

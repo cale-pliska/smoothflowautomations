@@ -23,9 +23,10 @@
 
 .logo {
     width: 20vw;
-    max-width: 200px;
+    max-width: 150px;
     display: block;
     margin: 0 auto 1rem;
+
 }
 
 .header-video {
