@@ -1,0 +1,23 @@
+/* About page specific styles */
+
+.about-photo {
+    float: right;
+    margin: 0 0 1rem 1rem;
+    width: min(45%, 300px); /* slightly larger on desktop */
+    border-radius: 0.5rem;
+}
+
+.about-intro::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 767px) {
+    .about-photo {
+        float: none;
+        display: block;
+        margin: 0 auto 1rem;
+        width: 80%;
+    }
+}
