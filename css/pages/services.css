@@ -3,3 +3,15 @@
     max-width: 700px;
     margin: 0 auto;
 }
+
+.service {
+    background: var(--color-highlight);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+}
+
+.service h3 {
+    margin-top: 0;
+    color: var(--color-accent);
+}
