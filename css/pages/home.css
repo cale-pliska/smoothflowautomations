@@ -62,6 +62,11 @@
     overflow: hidden;
 }
 
+/* make headings easier to read on the highlighted background */
+.it-guy-section h2 {
+    color: var(--color-dark-text);
+}
+
 /* ensure content appears above decorative SVG */
 .it-guy-section > * {
     position: relative;
