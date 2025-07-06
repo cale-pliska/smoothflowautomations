@@ -4,11 +4,6 @@
 function initHeader() {
   const video = document.getElementById('headerVideo');
   if (video) {
-    const isSmallScreen = window.matchMedia('(max-width: 768px)').matches;
-    if (isSmallScreen) {
-      video.removeAttribute('autoplay');
-      video.pause();
-    }
     video.addEventListener('ended', function () {
       video.pause();
       video.currentTime = video.duration; // freeze on last frame
