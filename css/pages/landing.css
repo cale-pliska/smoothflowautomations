@@ -25,18 +25,13 @@
     transform: translate(-50%, -50%);
 }
 
-.business-name {
-    display: inline-block;
-    background: var(--color-primary);
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    margin-top: 1rem;
-}
-
 .landing-nav {
+    background: var(--color-primary);
     position: absolute;
     bottom: 10%;
     width: 100%;
+    padding: 2rem 0rem;
+
 }
 
 .landing-nav ul {
@@ -45,14 +40,12 @@
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 5%;
 }
 
 .landing-nav a {
     color: white;
     text-decoration: none;
-    background: var(--color-primary);
-    padding: 0.5rem 1rem;
 }
 
 .landing-nav a:hover {
