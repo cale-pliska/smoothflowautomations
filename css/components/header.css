@@ -11,6 +11,9 @@
     margin: 0;
     padding: 0;
 }
+.landing .hero {
+    height: 100vh;
+}
 
 .overlay {
     position: absolute;
@@ -29,7 +32,7 @@
 
 }
 
-.header-video {
+.header-image {
     position: absolute;
     top: 0;
     left: 0;

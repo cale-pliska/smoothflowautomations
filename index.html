@@ -24,68 +24,25 @@
     <link rel="icon" type="image/png" href="assets/logo-500px.png">
     <link rel="stylesheet" href="css/base/global.css">
     <link rel="stylesheet" href="css/components/header.css">
-    <link rel="stylesheet" href="css/pages/home.css">
+    <link rel="stylesheet" href="css/pages/landing.css">
 </head>
 
-<body>
-    <div id="header-container"></div>
-    <main>
-        <section id="it-guy" class="home-section it-guy-section">
-            <h2>Your Action Sports IT Guy</h2>
-            <p>"I’m not some agency. I’m one of you, with the tech skills you wish your last guy had and more."</p>
-            <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/4b-L96VXmNc" title="Action Sports IT Guy video"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-            <svg class="circle-bg" viewBox="0 0 160 160" aria-hidden="true">
-                <circle cx="10" cy="30" r="20" style="fill: var(--color-primary); opacity: 0.25;"></circle>
-                <circle cx="80" cy="50" r="30" style="fill: var(--color-accent); opacity: 0.3;"></circle>
-                <circle cx="50" cy="140" r="40" style="fill: var(--color-primary); opacity: 0.15;"></circle>
-            </svg>
-        </section>
-        <section id="home" class="home-section">
-            <h2 class="welcome-title">
-                Balancing the Yin & Yang of IT
-                <svg class="yin-yang-icon" viewBox="0 0 100 100" aria-hidden="true">
-                    <circle cx="50" cy="50" r="45" opacity="0.15" fill="var(--color-accent)" />
-                    <path d="M50 5a45 45 0 0 0 0 90 22.5 22.5 0 0 0 0-45 22.5 22.5 0 0 1 0-45z" opacity="0.25"
-                        fill="var(--color-accent)" />
-                    <circle cx="50" cy="25" r="8" opacity="0.25" fill="var(--color-accent)" />
-                    <circle cx="50" cy="75" r="8" opacity="0.15" fill="var(--color-accent)" />
-                </svg>
-            </h2>
-            <div class="balance-intro">
-                <img src="assets/cale-tree-pose.jpeg" alt="Cale in tree pose" class="home-photo">
-                <p><b>IT Strategy: </b>There are millions of technologies availabile. How do you sift through the crap
-                    and develop an effective strategy that <i>enhances</i> your business?</p>
-                <p><b>IT Execution: </b>It is too easy to over-engineer and over-complicate. Is your IT getting done
-                    fast enought for you?</p>
-            </div>
-            <br>
-            <h3><i>Secret Sauce: </i>With every project, we find the right balance between IT strategy and execution.
-            </h3>
-        </section>
-        <section id="case-study" class="home-section it-guy-section">
-            <h2>Ronix &amp; Radar Case Study</h2>
-            <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/2d7pbFtxD9U" title="Ronix &amp; Radar Case Study" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-            <svg class="circle-bg" viewBox="0 0 160 160" aria-hidden="true">
-                <circle cx="10" cy="30" r="20" style="fill: var(--color-primary); opacity: 0.25;"></circle>
-                <circle cx="80" cy="50" r="30" style="fill: var(--color-accent); opacity: 0.3;"></circle>
-                <circle cx="50" cy="140" r="40" style="fill: var(--color-primary); opacity: 0.15;"></circle>
-            </svg>
-        </section>
-    </main>
-
-    <div id="footer-container"></div>
-
-    <script src="js/header.js" defer></script>
-    <script src="js/main.js" defer></script>
+<body class="landing-page">
+    <header class="landing-header">
+        <img src="assets/river-flowing-poster.jpg" alt="Flowing river" class="landing-bg">
+        <div class="landing-center">
+            <img src="assets/logo-500px.png" alt="SmoothFlow Automations logo" class="logo">
+            <h1 class="business-name">SmoothFlow Automations</h1>
+        </div>
+        <nav class="landing-nav">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 </body>
 
 </html>
