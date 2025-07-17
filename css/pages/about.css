@@ -3,7 +3,7 @@
 .about-photo {
     float: right;
     margin: 0 0 1rem 1rem;
-    width: min(45%, 300px); /* slightly larger on desktop */
+    width: min(45%, 250px); /* slightly larger on desktop */
     border-radius: 1rem;
     border: 12px solid var(--color-accent);
 }
